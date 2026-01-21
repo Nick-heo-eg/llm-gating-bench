@@ -24,6 +24,48 @@ We benchmark a simple idea: deciding whether to call an LLM **before generation*
 
 ---
 
+## Scope and Non-Goals
+
+This repository benchmarks **pre-generation gating** as a cost-control pattern.
+
+It does **not** claim:
+- State-of-the-art RAG accuracy
+- Improvements in answer quality or reasoning
+- Superiority over advanced adaptive RAG methods
+
+The goal is to measure how **deciding before generation** changes latency, token usage, and LLM call rate.
+
+---
+
+## Dataset Size and Interpretation
+
+Current results are based on a **small-n measurement** (5 queries).
+
+This benchmark is intended to show **effect magnitude** under a constrained environment (CPU-only local LLM), not statistical generalization.
+
+Scripts and structure are provided to scale:
+- number of queries
+- corpus size
+- gating policies
+
+Larger-scale evaluation is a planned extension.
+
+---
+
+## When This Is Useful
+
+This benchmark is most relevant when:
+- LLM inference is expensive (CPU-only, large models, rate limits)
+- Many queries are unanswerable or off-topic
+- Auditability of "why we did not answer" matters
+
+It is less relevant when:
+- LLM calls are cheap (fast GPU inference)
+- All queries are well-formed and answerable
+- Generation cost is negligible compared to retrieval
+
+---
+
 ## What is Stop-First
 
 ```
