@@ -124,6 +124,25 @@ For RAG-specific patterns (document conflict detection, evidence scoring):
 
 ---
 
+## Why This Exists
+
+Pre-generation gating provides concrete operational benefits when LLM calls are expensive or unreliable:
+
+- **Reduced cost and latency** by avoiding generation for unanswerable queries
+  (40% fewer LLM calls, 5.17× latency speedup on CPU-only)
+
+- **No hallucinated answers** when evidence is missing
+  (queries with no supporting documents stop with explicit reasons)
+
+- **Auditable non-answers** via typed stop reasons
+  (`no_data`, `conflict`, `low_confidence`), enabling debugging and corpus improvement
+
+- **Safer operation in high-risk domains**, where not answering is preferable to fabricating confidence
+
+These effects are quantified in the benchmark results above.
+
+---
+
 ## License
 
 MIT
