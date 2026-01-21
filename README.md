@@ -120,7 +120,7 @@ This repository focuses on **when** to call an LLM, not **how** the LLM reasons.
 This benchmark includes a Stop-First implementation originally derived from a RAG use case.
 
 For RAG-specific patterns (document conflict detection, evidence scoring):
-→ [stop-first-rag](https://github.com/nick-heo123/stop-first-rag)
+→ [stop-first-rag](https://github.com/Nick-heo-eg/stop-first-rag)
 
 ---
 
