@@ -4,6 +4,16 @@ We benchmark a simple idea: deciding whether to call an LLM **before generation*
 
 ---
 
+## Scope and Assumptions
+
+This benchmark evaluates gating decisions **before calling an LLM**.
+
+- **Target environment**: CPU-only, local LLM setups
+- **Workloads**: synthetic and controlled
+- **Goal**: measure relative performance impact, not real-world task quality
+
+---
+
 ## Why It Matters
 
 - CPU-only local LLMs are slow (seconds to minutes per call)
@@ -21,6 +31,8 @@ We benchmark a simple idea: deciding whether to call an LLM **before generation*
 | Token Usage      | 716              | 461        | **36% ↓**   |
 
 > Measured on CPU-only Ollama (phi3:mini), 5 mixed queries (3 answerable, 2 unanswerable).
+
+**Reported speedups apply only under the conditions described above. Results should not be generalized without validation in other environments.**
 
 ---
 
