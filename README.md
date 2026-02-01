@@ -1,5 +1,16 @@
 # LLM Gating Bench
 
+## Position
+
+This repository is part of the **Judgment Boundary** work:
+a set of experiments and specifications focused on
+*when AI systems must stop or not execute*.
+
+See the overarching map:
+→ https://github.com/Nick-heo-eg/stop-first-rag/blob/main/JUDGMENT_BOUNDARY_MANIFEST.md
+
+---
+
 We benchmark a simple idea: deciding whether to call an LLM **before generation**.
 
 ---
