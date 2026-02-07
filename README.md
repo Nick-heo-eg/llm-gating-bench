@@ -15,6 +15,8 @@ We benchmark a simple idea: deciding whether to call an LLM **before generation*
 
 ---
 
+This repository benchmarks decision gating and boundary placement rather than model capability or output quality.
+
 ## Scope and Assumptions
 
 This benchmark evaluates gating decisions **before calling an LLM**.
