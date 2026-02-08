@@ -19,9 +19,15 @@ This repository benchmarks decision gating and boundary placement rather than mo
 
 ---
 
-## Non-Goals
+## Scope
+This repository defines judgment boundaries that prevent execution without an explicit judgment step.
+It does not own, automate, or enforce judgment authority and makes no legal or compliance claims.
 
-This project does not aim to replace human or organizational judgment authority; does not provide sealed or proprietary judgment layers; does not claim legal, court-level, or regulatory admissibility; does not own, trademark, or enforce 'judgment language'. This project focuses on pre-execution judgment boundaries, STOP/HOLD/ALLOW as first-class outcomes, fail-closed behavior for unknown cases, negative proof logging, and observability-friendly reference patterns.
+## Non-Goals
+- No judgment automation or ownership
+- No legal-grade or court-ready claims
+- No sealed or proprietary authority
+- No safety or compliance guarantees
 
 ---
 
